@@ -10,14 +10,15 @@ import Foundation
 class WeatherDataModel{
     
     let apiUrl = "https://api.openweathermap.org/data/2.5/weather"
-    let apiId = "d065168e051110093ce5ad24cdd86f8a"
+    let apiId = "27c45999f3c26c914624f2d153cc4215"
     
     var temp: Int = 0
     var condition: Int = 0
     var city: String = ""
     var weatherIconName: String = ""
-    //var humidity: Int = 0
-    //var feels_like: Double = 0
+    var humidity: Int = 0
+    var feels_like: Int = 0
+    var speed: Int = 0
     
     func updateWeatherIcon(condition: Int) -> String {
         switch (condition) {

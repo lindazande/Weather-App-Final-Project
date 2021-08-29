@@ -23,6 +23,7 @@
 		BAD797B926D63B0C00FE0E9F /* DesignableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD797B826D63B0C00FE0E9F /* DesignableTextField.swift */; };
 		BAD797BB26D63B5E00FE0E9F /* BounceButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD797BA26D63B5E00FE0E9F /* BounceButton.swift */; };
 		BAD797BD26D63B7900FE0E9F /* DesignButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD797BC26D63B7900FE0E9F /* DesignButton.swift */; };
+		BAD797BF26D6EF0700FE0E9F /* NotesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD797BE26D6EF0700FE0E9F /* NotesTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		BAD797B826D63B0C00FE0E9F /* DesignableTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableTextField.swift; sourceTree = "<group>"; };
 		BAD797BA26D63B5E00FE0E9F /* BounceButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BounceButton.swift; sourceTree = "<group>"; };
 		BAD797BC26D63B7900FE0E9F /* DesignButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignButton.swift; sourceTree = "<group>"; };
+		BAD797BE26D6EF0700FE0E9F /* NotesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				BAD7979226D6310900FE0E9F /* WeatherViewController.swift */,
+				BAD797BE26D6EF0700FE0E9F /* NotesTableViewController.swift */,
 				BAD797AB26D631E100FE0E9F /* ChangeCityViewController.swift */,
 				BAD797AD26D6320600FE0E9F /* infoViewController.swift */,
 				BAD797AF26D6323700FE0E9F /* tempConverterViewController.swift */,
@@ -218,6 +221,7 @@
 				BAD797AA26D6316600FE0E9F /* WeatherDataModel.swift in Sources */,
 				BAD7979926D6310900FE0E9F /* Weather_App_Final_Project.xcdatamodeld in Sources */,
 				BAD797B026D6323700FE0E9F /* tempConverterViewController.swift in Sources */,
+				BAD797BF26D6EF0700FE0E9F /* NotesTableViewController.swift in Sources */,
 				BAD797BD26D63B7900FE0E9F /* DesignButton.swift in Sources */,
 				BAD7978F26D6310900FE0E9F /* AppDelegate.swift in Sources */,
 				BAD7979126D6310900FE0E9F /* SceneDelegate.swift in Sources */,

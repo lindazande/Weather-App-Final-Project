@@ -18,6 +18,10 @@ class  WeatherViewController: UIViewController, CLLocationManagerDelegate, Chang
     @IBOutlet weak var tempLabel: UILabel!
     @IBOutlet weak var cityLabel: UILabel!
     
+    @IBOutlet weak var feelsLikeLabel: UILabel!
+    @IBOutlet weak var humidityLabel: UILabel!
+    
+    @IBOutlet weak var windLabel: UILabel!
     let weatherDataModel = WeatherDataModel()
     let locationManager = CLLocationManager()
     
@@ -70,19 +74,23 @@ class  WeatherViewController: UIViewController, CLLocationManagerDelegate, Chang
             weatherDataModel.city = json["name"].stringValue
             weatherDataModel.condition = json["weather"][0]["id"].intValue
             weatherDataModel.weatherIconName = weatherDataModel.updateWeatherIcon(condition: weatherDataModel.condition)
-            //weatherDataModel.humidity = json["main"][humidity].intValue
-            //if let feelsLikeResult = json["main"]["feels_like"].double {
-            
-            //weatherDataMoel.feels_like = Int(feelsLikeResult - 273.15)
+            weatherDataModel.humidity = json["main"]["humidity"].intValue
+    if let feelsLikeResult = json["main"]["feels_like"].double {
+            weatherDataModel.feels_like = Int(feelsLikeResult - 273.15)
+        weatherDataModel.speed = json["wind"]["speed"].intValue
             updateUI()
         }else{
             self.cityLabel.text = "Weather unavailable 🚫!"
         }
+        }
     }
     func updateUI(){
         cityLabel.text = weatherDataModel.city
-        tempLabel.text = "\(weatherDataModel.temp)"
+        tempLabel.text = "\(weatherDataModel.temp) ºC"
         weatherIcon.image = UIImage(named: weatherDataModel.weatherIconName)
+        humidityLabel.text = "Humidity \(weatherDataModel.humidity) %"
+        feelsLikeLabel.text = "Feels like \(weatherDataModel.feels_like) ºC"
+        windLabel.text = "Wind \(weatherDataModel.speed) km/h"
         
         
     }
@@ -102,8 +110,7 @@ class  WeatherViewController: UIViewController, CLLocationManagerDelegate, Chang
             let vc = segue.destination as! tempConverterViewController
         
         vc.infoText = "It is \(weatherDataModel.temp) ºC,\n \((Double(weatherDataModel.temp) * 9 / 5) + 32) ºF and \(Double(weatherDataModel.temp) + 273.15) ºK in \(weatherDataModel.city)"
-            
-        }
-    }
+            }
+    
 }
-
+}
