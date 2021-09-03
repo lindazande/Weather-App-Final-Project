@@ -33,10 +33,14 @@ class  WeatherViewController: UIViewController, CLLocationManagerDelegate, Chang
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
         
-        // Do any additional setup after loading the view.
+ // Do any additional setup after loading the view.
     }
-
-//MARK: -CCLocationManager
+    #warning("infoButtonAlert")
+   // @IBAction func info(_ sender: Any) {
+    //    basicAlert(title: "Weather App", message: "In this app you can check weather. To change location, you can select BarButtonItem \"Arrow\" or to access Settings or Notes select BarButtonItem \"...\"!")
+  //  }
+    
+    //MARK: -CCLocationManager
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location = locations[locations.count - 1]
@@ -109,7 +113,7 @@ class  WeatherViewController: UIViewController, CLLocationManagerDelegate, Chang
     else if segue.identifier == "tempConverter"{
             let vc = segue.destination as! tempConverterViewController
         
-        vc.infoText = "It is \(weatherDataModel.temp) ºC,\n \((Double(weatherDataModel.temp) * 9 / 5) + 32) ºF and \(Double(weatherDataModel.temp) + 273.15) ºK in \(weatherDataModel.city)"
+        vc.infoText = "It is \n \(weatherDataModel.temp) ºC,\n \((Double(weatherDataModel.temp) * 9 / 5) + 32) ºF,\n\(Double(weatherDataModel.temp) + 273.15) ºK\n in \(weatherDataModel.city)"
             }
     
 }

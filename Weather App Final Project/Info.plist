@@ -68,5 +68,11 @@
 	<string>Need you location to obtain weather for you</string>
 	<key>NSLocationUsageDescription</key>
 	<string>Need you location to obtain weather for you</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NanumGothic-Regular.ttf</string>
+		<string>ElMessiri-Regular.ttf</string>
+		<string>ElMessiri-Bold.ttf</string>
+	</array>
 </dict>
 </plist>

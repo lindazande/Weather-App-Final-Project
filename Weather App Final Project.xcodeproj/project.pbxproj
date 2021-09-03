@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA610F7226E0E210008D5C05 /* NanumGothic-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA610F7126E0E210008D5C05 /* NanumGothic-Regular.ttf */; };
+		BA610F7826E0E6DD008D5C05 /* ElMessiri-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA610F7726E0E6DD008D5C05 /* ElMessiri-Regular.ttf */; };
+		BA610F7A26E0E738008D5C05 /* ElMessiri-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA610F7926E0E738008D5C05 /* ElMessiri-Bold.ttf */; };
+		BA610F7C26E0E7CC008D5C05 /* NanumGothic-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BA610F7B26E0E7CB008D5C05 /* NanumGothic-Bold.ttf */; };
+		BA610F7D26E1174E008D5C05 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD7979A26D6310B00FE0E9F /* Assets.xcassets */; };
 		BAD7978F26D6310900FE0E9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7978E26D6310900FE0E9F /* AppDelegate.swift */; };
 		BAD7979126D6310900FE0E9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7979026D6310900FE0E9F /* SceneDelegate.swift */; };
 		BAD7979326D6310900FE0E9F /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD7979226D6310900FE0E9F /* WeatherViewController.swift */; };
 		BAD7979626D6310900FE0E9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD7979426D6310900FE0E9F /* Main.storyboard */; };
 		BAD7979926D6310900FE0E9F /* Weather_App_Final_Project.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BAD7979726D6310900FE0E9F /* Weather_App_Final_Project.xcdatamodeld */; };
-		BAD7979B26D6310B00FE0E9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BAD7979A26D6310B00FE0E9F /* Assets.xcassets */; };
 		BAD7979E26D6310B00FE0E9F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BAD7979C26D6310B00FE0E9F /* LaunchScreen.storyboard */; };
 		BAD797AA26D6316600FE0E9F /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD797A926D6316600FE0E9F /* WeatherDataModel.swift */; };
 		BAD797AC26D631E100FE0E9F /* ChangeCityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BAD797AB26D631E100FE0E9F /* ChangeCityViewController.swift */; };
@@ -27,6 +31,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BA610F7126E0E210008D5C05 /* NanumGothic-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Regular.ttf"; sourceTree = "<group>"; };
+		BA610F7726E0E6DD008D5C05 /* ElMessiri-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ElMessiri-Regular.ttf"; sourceTree = "<group>"; };
+		BA610F7926E0E738008D5C05 /* ElMessiri-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ElMessiri-Bold.ttf"; sourceTree = "<group>"; };
+		BA610F7B26E0E7CB008D5C05 /* NanumGothic-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NanumGothic-Bold.ttf"; sourceTree = "<group>"; };
 		BAD7978B26D6310900FE0E9F /* Weather App Final Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weather App Final Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BAD7978E26D6310900FE0E9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BAD7979026D6310900FE0E9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +142,10 @@
 				BAD797B826D63B0C00FE0E9F /* DesignableTextField.swift */,
 				BAD797BA26D63B5E00FE0E9F /* BounceButton.swift */,
 				BAD797BC26D63B7900FE0E9F /* DesignButton.swift */,
+				BA610F7726E0E6DD008D5C05 /* ElMessiri-Regular.ttf */,
+				BA610F7B26E0E7CB008D5C05 /* NanumGothic-Bold.ttf */,
+				BA610F7926E0E738008D5C05 /* ElMessiri-Bold.ttf */,
+				BA610F7126E0E210008D5C05 /* NanumGothic-Regular.ttf */,
 			);
 			path = ExtraResources;
 			sourceTree = "<group>";
@@ -203,9 +215,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA610F7A26E0E738008D5C05 /* ElMessiri-Bold.ttf in Resources */,
 				BAD7979E26D6310B00FE0E9F /* LaunchScreen.storyboard in Resources */,
-				BAD7979B26D6310B00FE0E9F /* Assets.xcassets in Resources */,
 				BAD7979626D6310900FE0E9F /* Main.storyboard in Resources */,
+				BA610F7826E0E6DD008D5C05 /* ElMessiri-Regular.ttf in Resources */,
+				BA610F7226E0E210008D5C05 /* NanumGothic-Regular.ttf in Resources */,
+				BA610F7D26E1174E008D5C05 /* Assets.xcassets in Resources */,
+				BA610F7C26E0E7CC008D5C05 /* NanumGothic-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
